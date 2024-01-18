@@ -1,7 +1,20 @@
 const express = require('express');
+const {mongoclient} = require('mongodb');
+const ejs = require('ejs');
+
 const app = express();
 const port = 4000;
-const ejs = require('ejs');
+const url = 'mongodb://localhost:27017/organicStore'; // default mongoDB connection url
+
+//connect to mongoDB
+monogoClient.connection(mongoURL,{useNewUrlParser: true,useUnifiedTopology: true},(err, client) =>{
+    if(err){
+        console.error('Error connecting to MongoDB',err);
+    }else{
+        console.log('Connected to MongoDB');
+    }
+})
+
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
@@ -30,8 +43,17 @@ app.get('/Everything2', (req, res) => {
 app.get('/Groceries2', (req, res) => {
     res.render('user/Groceries2');
 });
+app.get('/cart', (req, res) => {
+    res.render('user/cart');
+});
 app.get('/productPage', (req, res) => {
     res.render('user/productPage');
+});
+app.get('/registration', (req, res) => {
+    res.render('user/registration');
+});
+app.get('/login', (req, res) => {
+    res.render('user/login');
 });
 
 // admin--------------------------------------------------------
