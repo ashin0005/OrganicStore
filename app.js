@@ -1,25 +1,32 @@
 const express = require('express');
-const {mongoclient} = require('mongodb');
+const mongoose = require('mongoose');
 const ejs = require('ejs');
+
 
 const app = express();
 const port = 4000;
-const url = 'mongodb://localhost:27017/organicStore'; // default mongoDB connection url
 
-//connect to mongoDB
-monogoClient.connection(mongoURL,{useNewUrlParser: true,useUnifiedTopology: true},(err, client) =>{
-    if(err){
-        console.error('Error connecting to MongoDB',err);
-    }else{
-        console.log('Connected to MongoDB');
-    }
+//MongoDB connection URL
+mongoose.connect('mongodb://localhost:27017/organicStore')
+.then(() => {
+    console.log('successfully connected to MongoDB');
 })
+.catch((err) => {
+    console.error('Error connecting to MongoDB:',err);
+    process.exit(1);//Exit the application if unable to connect to MongoDB
+});
+
+
+
 
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
+    res.render('user/login');
+});
+app.get('/home', (req, res) => {
     res.render('user/index');
 });
 app.get('/about', (req, res) => {
@@ -52,9 +59,9 @@ app.get('/productPage', (req, res) => {
 app.get('/registration', (req, res) => {
     res.render('user/registration');
 });
-app.get('/login', (req, res) => {
-    res.render('user/login');
-});
+// app.get('/login', (req, res) => {
+//     res.render('user/login');
+// });
 
 // admin--------------------------------------------------------
 
