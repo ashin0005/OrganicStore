@@ -71,7 +71,7 @@
     }
 
     .rbg {
-      background-image: url(/user/reviewbg.jpg);
+      background-image: url(/public/user/reviewbg.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -90,6 +90,12 @@
     a:hover {
       color: white;
     }
+    .basket {
+      color: #8bc34a;
+    }
+    .nav-link:hover {
+      color: #8bc34a;
+    }
   </style>
 
 
@@ -100,7 +106,7 @@
   <nav class="navbar navbar-expand-lg ">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="/user/logo.svg" height="75" alt="MDB Logo" loading="lazy" />
+        <img src="/public/user/logo.svg" height="75" alt="MDB Logo" loading="lazy" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -110,22 +116,22 @@
   
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="Everything">Everything</a>
+            <a class="nav-link " aria-current="page" href="everything.html">Everything</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Groceries">Groceries</a>
+            <a class="nav-link" href="groceries.html">Groceries</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/juice">Juice</a>
+            <a class="nav-link" href="juice.html">Juice</a>
           </li>
         </ul>
         <div class="d-flex" role="search">
           <ul class="navbar-nav d-flex me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="/about">About</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contact">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" style="color: #8bc34a; font-weight: 600;" href="#"><bdi><span
@@ -143,7 +149,7 @@
                   </svg></span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="admin-dashboard "><span class="material-symbols-outlined">
+              <a class="nav-link" href="/views/admin/admin-dashboard.html"><span class="material-symbols-outlined">
                   person
                 </span></a>
             </li>
@@ -159,10 +165,10 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-6 p-5 mt-5">
-          <img src="public/user/product1.png" width="100%" alt="">
+          <img src="/public/user/product1.png" width="100%" alt="">
         </div>
         <div class="col-lg-6 mt-5 p-5 b">
-          <img src="public/user/leaf.png" alt="">
+          <img src="/public/user/leaf.png" alt="">
           <p style="font-family: 'Playfair Display', serif; color: black; font-size: 1.2rem; font-weight: 600;">
             Best
             Quality Products</p>
@@ -250,14 +256,14 @@
         <div class="col-lg-12  text-center">
           <h2>Best Selling Products</h2>
           <br>
-          <img src="public/user/leaf.png" alt="">
+          <img src="/public/user/leaf.png" alt="">
         </div>
       </div>
 
       <div class="row p-3">
         <div class="col-lg-3 col-md-6 col-sm-6 col-6" style="display: flex; justify-content: center;">
           <div class="card " style="width: 13rem; border: none; ">
-            <a href="productPage"><img class="card-img-top" src="public/user/s2p1.jpg" alt="Card image cap"></a>
+            <a href="productPage"><img class="card-img-top" src="/public/user/s2p1.jpg" alt="Card image cap"></a>
             <div class="card-body text-center">
               <p class="card-title" style="color: gray; font-size: .8rem;">Groceries</p>
               <h6 class="card-text">Assorted Coffee</h6>
@@ -284,7 +290,7 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6 col-6" style="display: flex; justify-content: center;">
           <div class="card" style="width: 13rem; border: none;">
-            <img class="card-img-top" src="public/user/s2p2.jpg" alt="Card image cap">
+            <img class="card-img-top" src="/public/user/s2p2.jpg" alt="Card image cap">
 
             <div class="card-body text-center">
               <p class="card-title" style="color: gray; font-size: .8rem;">Groceries</p>
@@ -315,7 +321,7 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6 col-6" style="display: flex; justify-content: center;">
           <div class="card" style="width: 13rem; border: none;">
-            <img class="card-img-top" src="public/user/s2p3.jpg" alt="Card image cap">
+            <img class="card-img-top" src="/public/user/s2p3.jpg" alt="Card image cap">
 
             <div class="card-body text-center">
               <p class="card-title" style="color: gray; font-size: .8rem;">Groceries</p>
@@ -343,7 +349,7 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6 col-6" style="display: flex; justify-content: center;">
           <div class="card " style="width: 13rem; border: none;">
-            <img class="card-img-top" src="public/user/s2p4.jpg" alt="Card image cap">
+            <img class="card-img-top" src="/public/user/s2p4.jpg" alt="Card image cap">
 
             <div class="card-body text-center">
               <p class="card-title" style="color: gray; font-size: .8rem;">Groceries</p>
@@ -374,7 +380,7 @@
       </div>
       <div class="row mt-5">
         <div class="col-lg-12 text-center">
-          <img width="13%" style="margin-bottom: -4vh;" src="public/user/leaf2.png" alt="">
+          <img width="13%" style="margin-bottom: -4vh;" src="/public/user/leaf2.png" alt="">
         </div>
       </div>
 
@@ -486,14 +492,14 @@
         <div class="col-lg-12  text-center ">
           <h2>Trending Products</h2>
           <br>
-          <img src="public/user/leaf.png" alt="">
+          <img src="/public/user/leaf.png" alt="">
         </div>
       </div>
 
       <div class="row p-3">
         <div class="col-lg-3 col-md-6 col-sm-6 col-6" style="display: flex; justify-content: center;">
           <div class="card " style="width: 13rem; border: none; ">
-            <img class="card-img-top" src="public/user/s2p1.jpg" alt="Card image cap">
+            <img class="card-img-top" src="/public/user/s2p1.jpg" alt="Card image cap">
             <div class="card-body text-center">
               <p class="card-title" style="color: gray; font-size: .8rem;">Groceries</p>
               <h6 class="card-text">Assorted Coffee</h6>
@@ -521,7 +527,7 @@
         <!-- </div> -->
         <div class="col-lg-3 col-md-6 col-sm-6 col-6" style="display: flex; justify-content: center;">
           <div class="card" style="width: 13rem; border: none;">
-            <img class="card-img-top" src="public/user/juice.jpg" alt="Card image cap">
+            <img class="card-img-top" src="/public/user/juice.jpg" alt="Card image cap">
             <div class="card-body text-center">
               <p class="card-title" style="color: gray; font-size: .8rem;">Juice</p>
               <h6 class="card-text">Orange Juice
@@ -552,7 +558,7 @@
         <!-- </div> -->
         <div class="col-lg-3 col-md-6 col-sm-6 col-6" style="display: flex; justify-content: center;">
           <div class="card" style="width: 13rem; border: none;">
-            <img class="card-img-top" src="public/user/sani.jpg" alt="Card image cap">
+            <img class="card-img-top" src="/public/user/sani.jpg" alt="Card image cap">
             <div class="card-body text-center">
               <p class="card-title" style="color: gray; font-size: .8rem;">Groceries</p>
               <h6 class="card-text">Hand Sanitizer</h6>
@@ -579,7 +585,7 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6 col-6" style="display: flex; justify-content: center;">
           <div class="card " style="width: 13rem; border: none;">
-            <img class="card-img-top" src="public/user/s2p3.jpg" alt="Card image cap">
+            <img class="card-img-top" src="/public/user/s2p3.jpg" alt="Card image cap">
             <div class="card-body text-center">
               <p class="card-title" style="color: gray; font-size: .8rem;">Groceries</p>
               <h6 class="card-text">Red Chillies
@@ -623,12 +629,12 @@
         <div class="col-lg-12  text-center ">
           <h1>Customers Reviews</h1>
           <br>
-          <img class="mb-5" src="public/user/leaf.png" alt="">
+          <img class="mb-5" src="/public/user/leaf.png" alt="">
         </div>
 
         <!-- card 1 -->
 
-        <div class="col-lg-4 col-md-12 col-sm-12 col-12"
+        <div class="col-lg-4 col-md-12 col-sm-12 col-12 mt-3"
           style="display: flex; align-items: center; justify-content: center;">
           <div class="card p-4" style="width: 18rem; border: none; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
             <div class="card-body text-center">
@@ -646,7 +652,7 @@
               <h6 class="card-subtitle mb-2 text-muted">Click edit button to change this text. Lorem ipsum dolor sit
                 amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
                 </p>
-                <img src="public/user/client1.png" width="20%" alt="">
+                <img src="/public/user/client1.png" width="20%" alt="">
                 <span>Mila Kunis</span>
             </div>
           </div>
@@ -654,12 +660,12 @@
 
         <!-- card 2 -->
 
-        <div class="col-lg-4 col-md-12 col-sm-12 col-12"
+        <div class="col-lg-4 col-md-12 col-sm-12 col-12 mt-3"
           style="display: flex; align-items: center; justify-content: center;">
           <div class="card rbg p-4 "
             style="color: white; width: 18rem; height: 22rem; border: none; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
             <div class="card-body text-center ">
-              <h1>Deal Of The Day 15% Off On All Vegetables!</h1>
+              <h2>Deal Of The Day 15% Off On All Vegetables!</h2>
               <h6 class="card-subtitle mb-2 rh6" style="color: white;">
                 I am text block. Click edit button to change this tex em ips.
               </h6>
@@ -675,7 +681,7 @@
 
         <!-- card 3 -->
 
-        <div class="col-lg-4 col-md-12 col-sm-12 col-12"
+        <div class="col-lg-4 col-md-12 col-sm-12 col-12 mt-3"
           style="display: flex; align-items: center; justify-content: center;">
           <div class="card p-4" style="width: 18rem; border: none; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
             <div class="card-body text-center">
@@ -693,7 +699,7 @@
               <h6 class="card-subtitle mb-2 text-muted">Click edit button to change this text. Lorem ipsum dolor sit
                 amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
                 </p>
-                <img src="public/user/client2.png" width="20%" alt="">
+                <img src="/public/user/client2.png" width="20%" alt="">
                 <span>Mike Sendler</span>
             </div>
           </div>
@@ -707,19 +713,19 @@
             </h3>
           </div>
           <div class="col-lg-2">
-            <img src="public/user/logo-1.svg" alt="">
+            <img src="/public/user/logo-1.svg" alt="">
           </div>
           <div class="col-lg-2">
-            <img src="public/user/logo-2.svg" alt="">
+            <img src="/public/user/logo-2.svg" alt="">
           </div>
           <div class="col-lg-2">
-            <img src="public/user/logo-3.svg" alt="">
+            <img src="/public/user/logo-3.svg" alt="">
           </div>
           <div class="col-lg-2">
-            <img src="public/user/logo-4.svg" alt="">
+            <img src="/public/user/logo-4.svg" alt="">
           </div>
           <div class="col-lg-2">
-            <img src="public/user/logo-5.svg" alt="">
+            <img src="/public/user/logo-5.svg" alt="">
           </div>
 
 
@@ -736,7 +742,7 @@
     <div class="container-fluid" style="border-bottom: 1px solid #ccc; background-color: #001524;">
       <div class="row p-5">
         <div class="col-lg-4" style="color: rgb(155, 155, 155) ;">
-          <img src="public/user/footerlogo.png" alt="">
+          <img src="/public/user/footerlogo.png" alt="">
           <h5>Maecenas mi justo, interdum at consectetur vel, tristique et arcu. Ut quis eros blandit, ultrices diam in,
             elementum ex. Suspendisse quis faucibus urna. Suspendisse pellentesque.</h5>
         </div>
@@ -773,8 +779,8 @@
           <a href="">Locate Stores</a>
           <br>
           <span>
-            <img width="40%" src="public/user/playstore.png" alt="">
-            <img width="40%" src="public/user/appstore.png" alt="">
+            <img width="40%" src="/public/user/playstore.png" alt="">
+            <img width="40%" src="/public/user/appstore.png" alt="">
           </span>
         </div>
       </div>
